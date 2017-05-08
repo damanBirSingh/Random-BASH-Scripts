@@ -6,6 +6,6 @@ for file in *.apk ;do
 			mv "$file" "${file/ /}"; 
 		done
 	fi
-	adb install $file
+	adb install -r $file
 done
 echo "Script complete"
