@@ -1,3 +1,4 @@
+echo "Script Start"
 for file in *.apk ;do
 	echo "Installing $file"
 	if [[ $file != "${file/ /}" ]]
@@ -8,4 +9,4 @@ for file in *.apk ;do
 	fi
 	adb install -r $file
 done
-echo "Script complete"
+echo "Script Complete"
