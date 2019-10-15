@@ -4,5 +4,4 @@ A simple bash script to install multiple .apk files to your Android phone straig
 2) Give executable rights to the script file by running:
       chmod +x install_apk.sh
 3) Make sure you adb installed and run the script by:
-      ./install.sh
-      
+      ./install.sh file
