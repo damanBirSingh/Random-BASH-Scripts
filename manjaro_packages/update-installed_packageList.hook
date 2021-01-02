@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pacman -Qqen > ~/System_Initial_Setup/manjaro_packages/pkglist-repo.txt' && /bin/sh -c '/usr/bin/pacman -Qqem > ~/System_Initial_Setup/manjaro_packages/pkglist-aur.txt' 
