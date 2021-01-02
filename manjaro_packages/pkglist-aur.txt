@@ -1,0 +1,6 @@
+droidcam
+ferdi
+google-chrome
+popcorntime-bin
+touchegg-git
+v4l2loopback-dc-dkms
