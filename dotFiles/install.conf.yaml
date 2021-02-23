@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zsh_history: zsh_history
+    ~/.vim: vim
+
+
+- create:
+    - ~/downloads
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [chsh -s $(which zsh)]
